@@ -38,12 +38,31 @@ string input() {
     return line; 
 
 }
+string type(string pageData) {
+    char firstChar = pageData.at(0);
+    string algType;
+    if (firstChar == 'F') {
+        algType = "First In First Out";
+    }
+    else if (firstChar == 'O') {
+        algType = "Optimal";
+    }
+    else if (firstChar == 'L') {
+        algType = "Least Recently Used";
+    }
+    else {
+        algType = "Unable to Determine Algorithm Type";
+    }
+    return algType;
+}
 
 int main() {
     string pageData;
+    string algType;
     pageData = input();
-    cout << pageData;
-
+    cout << pageData << endl;
+    algType = type(pageData);
+    cout << "Algorithm Type is " << algType;
 
     return 0; 
 }
