@@ -28,6 +28,7 @@ int main() {
     
     pageData = input();
     //frames = numFrames(pageData);
+    runAlg(pageData);
     
    //cout << pageData << endl; 
    // cout << "Algorithm Type is " << algType;
@@ -85,9 +86,13 @@ void runAlg(string pageData) {
     char firstChar = pageData.at(0);
     string algType;
     int frames = numFrames(pageData);
+    cout << "Num Frames: " << frames << endl;
     if (firstChar == 'F') {
         algType = "First In First Out";
+        cout << algType << endl;
         fifo alg(pageData, frames);
+        alg.implementFIFO();
+        alg.printData();
 
     }
     else if (firstChar == 'O') {

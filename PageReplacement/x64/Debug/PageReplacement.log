@@ -1,2 +1,8 @@
-﻿  main.cpp
+﻿  fifo.cpp
+C:\Users\SC-Ethan\OneDrive - University of Central Arkansas\Classes\Operating Systems\Final Project\PageReplacement\fifo.cpp(13,22): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\SC-Ethan\OneDrive - University of Central Arkansas\Classes\Operating Systems\Final Project\PageReplacement\fifo.cpp(27,19): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\SC-Ethan\OneDrive - University of Central Arkansas\Classes\Operating Systems\Final Project\PageReplacement\fifo.cpp(58,19): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\SC-Ethan\OneDrive - University of Central Arkansas\Classes\Operating Systems\Final Project\PageReplacement\fifo.cpp(56,6): warning C4101: 'testArray': unreferenced local variable
+  main.cpp
+  Generating Code...
   PageReplacement.vcxproj -> C:\Users\SC-Ethan\OneDrive - University of Central Arkansas\Classes\Operating Systems\Final Project\PageReplacement\x64\Debug\PageReplacement.exe

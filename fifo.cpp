@@ -14,16 +14,37 @@ fifo::fifo(string pageData, int framesNo) {
 }
 
 void fifo::implementFIFO() {
+	/* for reference to data
+	string data;
+	int frames;
+	int len;
+	// set max size to 9 frames and 20 pages
+	int pages[9][20]{ -1 };
+	*/
 	// this is where the algorithm goes
-	len = data.length() - 2;
+	// conditional that evaluates if the page has been placed for this frame
+	bool placed = false;
+	len = data.length();
 	// I hate this already
-	// initialize all 2d array values to -1
-	for (int i = 0; i < 9; i++) {
-		for (int j = 0; j < 20; j++) {
-			pages[i][j] = -1;
+	// driver loop for assigning pages to frames
+	for (int i = 0; i < len; i++) {
+		// first loop is per page being added
+		for (int h = 0; h < frames; h++) {
+			if (i != 0) {
+				// I fear i have gotten the dimensions swapped
+				pages[i][h] = pages[i - 1][h];
+			}
 		}
-	}
+		for (int j = 0; j < frames; j++) {
+			// this loop parses pages down by frame to find the fit. 
+			if (pages[i][j] == -1 && placed == false) {
+				pages[i][j] = data.at(i + 3);
+				placed = true; 
+			}
+		}
 
+		placed = false; 
+	}
 
 	
 }
@@ -34,13 +55,18 @@ void fifo::printData() {
 	string spacing = "   ";
 	int testArray[20];
 	// bullshittery with spacing
-	for (int i = 0; i < 20; i++) {
-		testArray[i] = rand()%10;
-	}
+	len = data.length();
 
 	cout << "reference string" << endl;
-	for (int i = 0; i < 20; i++) {
-		cout << testArray[i] << spacing;
+	for (int h = 2; h < len; h++) {
+		cout << data.at(h) << spacing;
+	}
+	cout << endl; 
+	for (int j = 0; j < frames; j++) {
+		for (int i = 2; i < len + 2; i++) {
+			cout << pages[j][i] << spacing;
+		}
+		cout << endl;
 	}
 	cout << endl << "page frames" << endl;
 	//std::cout << std::setw(60) << "123456789123456789" << std::endl;
