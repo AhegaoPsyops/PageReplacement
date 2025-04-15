@@ -15,4 +15,5 @@ public:
 	opt(std::string pageData);
 	void parseData(std::string pageData, int size, int* data);
 	void printbreak(int size);
+
 };

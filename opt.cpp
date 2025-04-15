@@ -43,6 +43,20 @@ opt::opt(std::string pageData)
 	out2.append(std::to_string(frame[1]) + "  ");
 	out3.append(std::to_string(frame[2]) + "  ");
 
+	std::string* array = new std::string[framesNo];
+	for (int i = 0; i < framesNo; i++)
+	{
+		for (int j = framesNo - i; j < framesNo; j++)
+		{
+			array[i].append("_ ");
+		}
+		for (int j = framesNo - i; j > 0; j--)
+		{
+			array[i].append(std::to_string(frame[i]) + " ");
+		}
+	}
+
+
 
 	for (int i = framesNo; i < size; i++)
 	{
@@ -75,9 +89,10 @@ opt::opt(std::string pageData)
 
 	opt::printbreak(size);
 
-	std::cout << out1 << std::endl;
-	std::cout << out2 << std::endl;
-	std::cout << out3 << std::endl;
+	for (int i = 0; i < framesNo; i++)
+	{
+		std::cout << array[i] << std::endl;
+	}
 
 	opt::printbreak(size);
 

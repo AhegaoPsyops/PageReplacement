@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{E89B5202-8B9B-46C9-B8FF-44AF54B17C39}|PageReplacement.vcxproj|solutionrelative:opt.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E89B5202-8B9B-46C9-B8FF-44AF54B17C39}|PageReplacement.vcxproj|C:\\Users\\corba\\source\\repos\\PageReplacement\\opt.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E89B5202-8B9B-46C9-B8FF-44AF54B17C39}|PageReplacement.vcxproj|solutionrelative:opt.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E89B5202-8B9B-46C9-B8FF-44AF54B17C39}|PageReplacement.vcxproj|C:\\Users\\corba\\source\\repos\\PageReplacement\\fifo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E89B5202-8B9B-46C9-B8FF-44AF54B17C39}|PageReplacement.vcxproj|solutionrelative:fifo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E89B5202-8B9B-46C9-B8FF-44AF54B17C39}|PageReplacement.vcxproj|C:\\Users\\corba\\source\\repos\\PageReplacement\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E89B5202-8B9B-46C9-B8FF-44AF54B17C39}|PageReplacement.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E89B5202-8B9B-46C9-B8FF-44AF54B17C39}|PageReplacement.vcxproj|C:\\Users\\corba\\source\\repos\\PageReplacement\\fifo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E89B5202-8B9B-46C9-B8FF-44AF54B17C39}|PageReplacement.vcxproj|solutionrelative:fifo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E89B5202-8B9B-46C9-B8FF-44AF54B17C39}|PageReplacement.vcxproj|C:\\Users\\corba\\source\\repos\\PageReplacement\\opt.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E89B5202-8B9B-46C9-B8FF-44AF54B17C39}|PageReplacement.vcxproj|solutionrelative:opt.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E89B5202-8B9B-46C9-B8FF-44AF54B17C39}|PageReplacement.vcxproj|C:\\Users\\corba\\source\\repos\\PageReplacement\\fifo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -52,14 +52,14 @@
               "RelativeDocumentMoniker": "opt.cpp",
               "ToolTip": "C:\\Users\\corba\\source\\repos\\PageReplacement\\opt.cpp*",
               "RelativeToolTip": "opt.cpp*",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAswDUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-14T23:49:10.78Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "opt.h",
               "DocumentMoniker": "C:\\Users\\corba\\source\\repos\\PageReplacement\\opt.h",
               "RelativeDocumentMoniker": "opt.h",
@@ -85,7 +85,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "fifo.cpp",
               "DocumentMoniker": "C:\\Users\\corba\\source\\repos\\PageReplacement\\fifo.cpp",
               "RelativeDocumentMoniker": "fifo.cpp",
@@ -104,7 +104,7 @@
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\corba\\source\\repos\\PageReplacement\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAcwGUAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAcwGUAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-10T17:00:50.444Z",
               "EditorCaption": ""
