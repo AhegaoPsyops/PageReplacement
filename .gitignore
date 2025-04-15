@@ -31,3 +31,14 @@
 *.out
 *.app
 /.vs/PageReplacement
+x64/Debug/fifo.obj.enc
+x64/Debug/vc143.pdb
+x64/Debug/vc143.idb
+.vs/PageReplacement/v17/.suo
+.vs/PageReplacement/v17/Browse.VC.db
+.vs/PageReplacement/v17/ipch/AutoPCH/b5446f9d5a1d10e7/MAIN.ipch
+x64/Debug/PageReplacement.ilk
+x64/Debug/PageReplacement.log
+x64/Debug/PageReplacement.pdb
+x64/Debug/vc143.idb
+x64/Debug/vc143.pdb
