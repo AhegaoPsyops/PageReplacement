@@ -10,10 +10,9 @@ class opt
 {
 private:
 	std::string data;
-	int framesNo;
+	const int framesNo = 3;
 public:
-	opt(std::string pageData, int framesNo);
-	void parseData(std::string pageData, int* data);
-	void optimal();
-	void printOutput();
+	opt(std::string pageData);
+	void parseData(std::string pageData, int size, int* data);
+	void printbreak(int size);
 };

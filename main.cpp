@@ -99,7 +99,7 @@ void runAlg(string pageData) {
     else if (firstChar == 'O') {
         algType = "Optimal";
         cout << algType << endl;
-        opt opt(pageData, frames);
+        opt opt(pageData);
     }
     else if (firstChar == 'L') {
         algType = "Least Recently Used";
