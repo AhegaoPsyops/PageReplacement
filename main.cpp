@@ -3,6 +3,7 @@
 #include <string>
 #include <cstdio>
 #include "fifo.h"
+#include "opt.h"
 using namespace std;
 
 // Ethan Dykes
@@ -97,6 +98,8 @@ void runAlg(string pageData) {
     }
     else if (firstChar == 'O') {
         algType = "Optimal";
+        cout << algType << endl;
+        opt opt(pageData, frames);
     }
     else if (firstChar == 'L') {
         algType = "Least Recently Used";
