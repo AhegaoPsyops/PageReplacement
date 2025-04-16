@@ -3,6 +3,7 @@
 #include <string>
 #include <cstdio>
 #include "fifo.h"
+#include "opt.h"
 using namespace std;
 
 /*
@@ -34,7 +35,6 @@ int main() {
 
 string input() {
     // asks for user input for file name, and returns a string of the data from file. 
-    int size = 0;
     string filename;
     string line;
     ifstream inputFile;
@@ -49,6 +49,12 @@ string input() {
         cout << "Enter another name: " << endl;
         cin >> filename;
         inputFile.open(filename);
+    }
+    // read every file of the code to the 
+    while (inputFile.get(c)) {
+        if (c != ',') {
+            line += c;
+        }
     }
     inputFile.close();
 
@@ -74,7 +80,7 @@ void runAlg(string pageData) {
     else if (firstChar == 'O') {
         algType = "Optimal";
         cout << algType << endl;
-        // opt opt(pageData, frames);
+        opt opt(pageData);
     }
     else if (firstChar == 'L') {
         algType = "Least Recently Used";
