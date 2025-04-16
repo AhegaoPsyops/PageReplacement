@@ -25,6 +25,8 @@ private:
 	int len;
 	// set max size to 9 frames and 20 pages
 	int pages[9][20];
+
+	int pagefaults;
 public: 
 	fifo(string pageData, int framesNo);
 	void printData();

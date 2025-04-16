@@ -1,4 +1,3 @@
-﻿  opt.cpp
-C:\Users\corba\source\repos\PageReplacement\opt.cpp(12,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\corba\source\repos\PageReplacement\opt.cpp(144,1): warning C4715: 'opt::checkdupe': not all control paths return a value
-  PageReplacement.vcxproj -> C:\Users\corba\Source\Repos\PageReplacement\x64\Debug\PageReplacement.exe
+﻿  fifo.cpp
+C:\Users\corba\source\repos\PageReplacement1\fifo.cpp(28,19): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  PageReplacement.vcxproj -> C:\Users\corba\Source\Repos\PageReplacement1\x64\Debug\PageReplacement.exe

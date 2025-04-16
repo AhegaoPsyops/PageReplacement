@@ -13,6 +13,7 @@ fifo::fifo(string pageData, int framesNo) {
 	data = pageData;
 	frames = framesNo;
 	// since our metadata has been processed already, we can remove the first two letters of the string
+	fifo::pagefaults = 0;
 	string newData;
 	for (int i = 2; i < data.length(); i++) {
 		newData += data.at(i);
@@ -56,7 +57,8 @@ void fifo::implementFIFO() {
 		// if not found, replace the oldest page
 		if (!found) {
 			frameContent[oldestIndex] = currentPage;
-			oldestIndex = (oldestIndex + 1) % frames; 
+			oldestIndex = (oldestIndex + 1) % frames;
+			fifo::pagefaults++;
 		}
 
 		// record frameContent into the 2D pages array
@@ -80,6 +82,8 @@ void fifo::printData() {
 	}
 	cout << endl;
 
+	cout << endl << "page frames" << endl;
+
 	// Print page frame state row by row
 	// finding setw made my life much easier
 	for (int row = 0; row < frames; row++) {
@@ -94,5 +98,7 @@ void fifo::printData() {
 		cout << endl;
 	}
 
-	cout << endl << "page frames" << endl;
+	cout << endl << "Pagefaults: " << fifo::pagefaults << endl;
+
+
 }
